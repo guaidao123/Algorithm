@@ -58,6 +58,18 @@ public class Array<T> {
         return data[index];
     }
 
+//    获取尾元素
+    public T getLast(){
+        return getData(size-1);
+    }
+
+//    获取头元素
+    public T getFirst(){
+        return getData(0);
+    }
+
+
+
 //    修改数组元素
     public void setData(int index, T e){
         if(index<0 || index >= size){
